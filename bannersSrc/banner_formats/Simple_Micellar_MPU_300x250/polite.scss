@@ -1,0 +1,78 @@
+/* polite css */
+@import "../../globalvars";
+@import "../../fonts";
+
+// to include animate css, please removed if the library is not used check how to it use here :
+// http://daneden.github.io/animate.css/
+
+@import "../../animate";
+
+//banner size
+$bannerWidth : 300px;
+$bannerHeight: 250px;
+
+//font sizes
+$display-text-big: 30px;
+$display-text-medium: 24px;
+$display-text-small: 12px;
+
+//elements positioning
+$logo-posx: 100px;
+$logo-posy: 65px;
+
+$cta-posx: 300px;
+$cta-posy: 65px;
+
+/* ==========================================================================
+   TEXT / COPY
+   ========================================================================== */
+
+.display-text-big {
+
+	font-size: $display-text-big;
+
+}
+
+.display-text-medium {
+
+	font-size: $display-text-medium;
+
+}
+
+.display-text-small {
+
+	font-size: $display-text-small;
+
+}
+
+/* ==========================================================================
+   DEFAULT ELEMENTS
+   ========================================================================== */
+
+.logo {
+
+	position:absolute;
+	left:logo-posx;
+	top:logo-posy;
+}
+
+.cta {
+
+	position:absolute;
+	top:cta-posx;
+	left:cta-posx;
+
+	&.is-visible {
+		display:none;
+	}
+}
+
+/* ==========================================================================
+   CUSTOM ELEMENTS
+   ========================================================================== */
+
+
+.banner {
+
+	background-image: url("../../../assets/images/mpu_bg.jpg");
+}
